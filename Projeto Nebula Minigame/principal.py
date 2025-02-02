@@ -15,7 +15,7 @@ class Menu:
         self.imagem_menu = pygame.image.load('Nebula Minigame\\data\\menu.png')  # Exibe a imagem do menu inicial
         self.rodando = True # Indica que o menu está em execução
         self.jogar_rect = pygame.Rect(largura // 2 - 300, altura // 2 + 110, 280, 100)  # Define a área do botão JOGAR
-        self.sair_rect = pygame.Rect(largura // 2 + 20, altura // 2 + 110, 285, 100)  # Define a área do boão SAIR
+        self.sair_rect = pygame.Rect(largura // 2 + 20, altura // 2 + 110, 285, 100)  # Define a área do botão SAIR
 
     def run(self): # Exibe o menu em loop enquanto aguarda a interação do usuário.
 
@@ -32,8 +32,8 @@ class Menu:
 
             # Desenhando os elementos visuais do menu na tela:
             self.display_surface.blit(self.imagem_menu, (0, 0)) # A superfície principal onde tudo é desenhado com o método blit e a definição da imagem utilizada indicada na variável
-            pygame.draw.rect(self.display_surface, (255, 0, 0), self.jogar_rect, -1)  # Superfície onde o botão para jogar é desenhado, entre parênteses está definido o cóigo das cores usadas
-            pygame.draw.rect(self.display_surface, (255, 0, 0), self.sair_rect, -1)    # Superfície onde o botão para sair é desenhado, entre parênteses está definido o cóigo das cores usadas
+            pygame.draw.rect(self.display_surface, (255, 0, 0), self.jogar_rect, -1)  # Superfície onde o botão para jogar é desenhado, entre parênteses está definido o código das cores usadas
+            pygame.draw.rect(self.display_surface, (255, 0, 0), self.sair_rect, -1)    # Superfície onde o botão para sair é desenhado, entre parênteses está definido o código das cores usadas
 # o -1 indica que a cor preenche o retângulo completamente.            
             pygame.display.update() # Atualiza a tela, exibindo as mudanças que foram feitas (imagem de fundo e retângulos dos botões).
 
